@@ -1,5 +1,5 @@
-# Undoes setup-macos-vm.ps1: turns the Windows hypervisor back on
-# (needed for WSL2, Docker, Hyper-V, Windows Sandbox).
+# Undoes disable-hyperv.ps1: turns the Windows hypervisor back on
+# (needed for WSL2, Docker Desktop, Hyper-V, Windows Sandbox).
 
 $principal = New-Object Security.Principal.WindowsPrincipal([Security.Principal.WindowsIdentity]::GetCurrent())
 if (-not $principal.IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)) {

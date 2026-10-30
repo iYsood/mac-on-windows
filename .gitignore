@@ -1,0 +1,24 @@
+# Disk images and downloads (large, never commit)
+*.dmg
+*.chunklist
+*.vmdk
+*.vdi
+*.iso
+*.img
+macOS-VM/
+
+# VM files
+*.vmx
+*.vmxf
+*.vmsd
+*.nvram
+*.vbox
+*.vbox-prev
+*.log
+
+# OS / editor
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/
+.idea/
