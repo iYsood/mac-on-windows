@@ -1,0 +1,59 @@
+name: Bug report / مشكلة
+description: التثبيت أو أحد السكربتات ما اشتغل
+labels: [bug]
+body:
+  - type: dropdown
+    id: macos
+    attributes:
+      label: إصدار macOS
+      options:
+        - macOS 26 Tahoe
+        - macOS 15 Sequoia
+        - macOS 14 Sonoma
+        - macOS 13 Ventura
+        - macOS 12 Monterey
+    validations:
+      required: true
+  - type: dropdown
+    id: hypervisor
+    attributes:
+      label: البرنامج
+      options:
+        - VMware Workstation Pro
+        - VirtualBox
+    validations:
+      required: true
+  - type: input
+    id: hypervisor-version
+    attributes:
+      label: إصدار البرنامج
+      placeholder: "مثال: VMware 17.6.4 أو VirtualBox 7.2.22"
+  - type: input
+    id: hardware
+    attributes:
+      label: الجهاز
+      placeholder: "مثال: Windows 11 Pro، i9-14900K، 64GB، RTX 5080"
+    validations:
+      required: true
+  - type: dropdown
+    id: hyperv
+    attributes:
+      label: هل شغّلت disable-hyperv وسويت ريستارت؟
+      options:
+        - نعم
+        - لا
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: وش صار؟
+      description: الخطوة اللي وقفت عندها، ووش توقعت يصير.
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: رسالة الخطأ أو السجل
+      description: نص الخطأ كامل. لو تستخدم VirtualBox، الصق آخر 100 سطر من VBox.log.
+      render: shell

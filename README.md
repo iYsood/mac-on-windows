@@ -2,6 +2,8 @@
 
 دليل وسكربتات لتشغيل **macOS في جهاز وهمي (VM)** على ويندوز بأجهزة Intel و AMD، وبطريقة نظيفة: صورة النظام تنزل مباشرة من سيرفرات Apple، بدون ملفات ISO مجهولة المصدر.
 
+[![CI](https://github.com/iYsood/mac-on-windows/actions/workflows/ci.yml/badge.svg)](https://github.com/iYsood/mac-on-windows/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 ![Platform](https://img.shields.io/badge/host-Windows%2010%20%7C%2011-0078D6?logo=windows)
 ![macOS](https://img.shields.io/badge/macOS-12%20→%2026-000000?logo=apple)
 ![VMware](https://img.shields.io/badge/VMware-Workstation%20Pro-607078?logo=vmware)
@@ -15,6 +17,7 @@
 - [السكربتات](#السكربتات)
 - [هيكل المستودع](#هيكل-المستودع)
 - [أسئلة شائعة](#أسئلة-شائعة)
+- [المساهمة](#المساهمة)
 
 ---
 
@@ -84,6 +87,14 @@
 ```
 mac-on-windows/
 ├── README.md
+├── CHANGELOG.md
+├── CONTRIBUTING.md
+├── SECURITY.md
+├── LICENSE
+├── .github/
+│   ├── workflows/ci.yml         # فحص السكربتات والروابط تلقائياً
+│   ├── ISSUE_TEMPLATE/          # قوالب المشاكل والتجارب
+│   └── pull_request_template.md
 ├── docs/
 │   ├── vmware-setup.md          # الخطوات المشتركة على VMware
 │   ├── virtualbox-setup.md      # VirtualBox (Monterey و Ventura)
@@ -127,6 +138,17 @@ mac-on-windows/
 
 اتفاقية ترخيص macOS من Apple تسمح بتشغيله فقط على أجهزة Apple. هذا المستودع لأغراض التجربة والتعليم، فاقرأ الاتفاقية وقرر بنفسك.
 </details>
+
+---
+
+## المساهمة
+- عندك مشكلة؟ افتح [Issue](https://github.com/iYsood/mac-on-windows/issues/new/choose) بقالب **Bug report**.
+- نجحت الطريقة على جهازك؟ شاركها بقالب **Tested on my hardware**.
+- تبي تعدل شي؟ اقرأ [CONTRIBUTING.md](CONTRIBUTING.md).
+- لقيت مشكلة أمنية؟ اقرأ [SECURITY.md](SECURITY.md).
+
+## الرخصة
+السكربتات والتوثيق تحت رخصة [MIT](LICENSE). macOS نفسه يخضع لاتفاقية ترخيص Apple.
 
 ---
 

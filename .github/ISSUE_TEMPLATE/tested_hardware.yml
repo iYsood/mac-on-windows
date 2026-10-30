@@ -1,0 +1,47 @@
+name: Tested on my hardware / نجحت عندي
+description: شارك جهازك اللي اشتغلت عليه الطريقة
+labels: [tested-hardware]
+body:
+  - type: dropdown
+    id: macos
+    attributes:
+      label: إصدار macOS
+      options:
+        - macOS 26 Tahoe
+        - macOS 15 Sequoia
+        - macOS 14 Sonoma
+        - macOS 13 Ventura
+        - macOS 12 Monterey
+    validations:
+      required: true
+  - type: dropdown
+    id: hypervisor
+    attributes:
+      label: البرنامج
+      options:
+        - VMware Workstation Pro
+        - VirtualBox
+    validations:
+      required: true
+  - type: input
+    id: cpu
+    attributes:
+      label: المعالج
+      placeholder: "مثال: Intel Core i7-12700K"
+    validations:
+      required: true
+  - type: input
+    id: ram
+    attributes:
+      label: الرام
+      placeholder: "مثال: 32GB"
+  - type: input
+    id: windows
+    attributes:
+      label: إصدار ويندوز
+      placeholder: "مثال: Windows 11 24H2"
+  - type: textarea
+    id: notes
+    attributes:
+      label: ملاحظات
+      description: أي إعداد غيّرته عن الدليل، أو مشكلة واجهتك وحليتها.
