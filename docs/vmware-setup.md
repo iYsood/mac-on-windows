@@ -79,7 +79,12 @@ scripts\prepare-macos-recovery.bat -Version Tahoe -OutDir D:\macOS-VM
 
 ## 7. بعد التثبيت
 1. **أطفِ الـ VM**، واحذف قرص الاستعادة من الإعدادات بخيار **Remove**. هذا يشيله من الـ VM بس، والملف يبقى على القرص.
-2. **VMware Tools**: من إعدادات CD/DVD اختر `darwin.iso`، وشغّل المثبت داخل macOS. بعدها افتح **System Settings ← Privacy & Security**، ووافق على الإضافة، وسوّ ريستارت.
+2. **VMware Tools**: يحسّن دقة الشاشة والماوس، ويفعّل النسخ واللصق والسحب والإفلات بين ويندوز و macOS.
+   - Auto-Unlocker يحاول ينزّل `darwin.iso`، بس أحياناً يفشل في نسخه لمجلد VMware. إذا ما لقيته، نزّله مباشرة من سيرفر VMware الرسمي: [darwin.iso](https://packages.vmware.com/tools/frozen/darwin/darwin.iso) (حوالي 3.4MB، لـ macOS 10.15 وأحدث).
+   - من إعدادات الـ VM افتح **CD/DVD ← Use ISO image file**، واختر `darwin.iso`، وفعّل **Connected**.
+   - داخل macOS افتح قرص **VMware Tools**، واضغط **Install VMware Tools**.
+   - لما تطلع رسالة **System Extension Blocked**، افتح **System Settings ← Privacy & Security**، واضغط **Allow** جنب VMware, Inc.، وسوّ ريستارت.
+   - بعد التثبيت افصل الـ ISO من إعدادات CD/DVD.
 3. لتحسين السرعة، افتح **System Settings ← Accessibility ← Display** وفعّل **Reduce transparency** و **Reduce motion**.
 
 إذا واجهتك مشكلة، راجع [troubleshooting.md](troubleshooting.md).

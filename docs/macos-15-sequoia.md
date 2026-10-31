@@ -13,6 +13,8 @@
 scripts\prepare-macos-recovery.bat -Version Sequoia -OutDir D:\macOS-VM
 ```
 
+> ✅ **مجرّب:** انثبت كامل بهذي الطريقة على VMware Workstation 17.6.2، بمعالج i9-14900K.
+
 ## وش يختلف في Sequoia
 - **أخف من Tahoe** لأن تصميمه بدون Liquid Glass، فهو أنسب خيار لو تبي نظام حديث وسلس في الـ VM.
 - **VMware Tools** يشتغل عادي بعد ما توافق عليه في Privacy & Security.

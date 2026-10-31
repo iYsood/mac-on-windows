@@ -10,6 +10,11 @@
 - قوالب Issues و Pull Requests.
 - فحص تلقائي عن طريق GitHub Actions، يفحص صياغة سكربتات PowerShell والروابط في ملفات التوثيق.
 - ملف `.editorconfig`.
+- رابط رسمي لملف `darwin.iso` (VMware Tools)، وخطوات تثبيته بالتفصيل.
+- علامة إن Sequoia مجرّب على VMware 17.6.2.
+
+### تغيّر
+- `.gitignore` صار يتجاهل مجلدات صور الاستعادة، وملفات الأدوات اللي تتحمّل، ومجلد auto-unlocker.
 
 ## 2026-10-30
 

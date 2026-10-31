@@ -19,4 +19,4 @@ scripts\prepare-macos-recovery.bat -Version Tahoe -OutDir D:\macOS-VM
 - **Liquid Glass**: تصميم Tahoe فيه شفافية وتأثيرات كثيرة، والـ VM ما يستخدم كرت الشاشة. فلازم تفعّل **Reduce transparency** و **Reduce motion** بعد التثبيت، وإلا بيكون النظام ثقيل.
 - **VMware Tools**: ممكن ما يشتغل كامل على Tahoe. إذا رفض، كمّل بدونه، بس بتبقى دقة الشاشة محدودة.
 - **VirtualBox**: ما ننصح فيه أبداً مع Tahoe، لأنه يعلّق ويعيد التشغيل.
-- **تحويل صورة الاستعادة**: طريقة `qemu-img` مجرّبة في المصادر لين Sonoma. إذا فشل التحويل مع Tahoe، استخدم [Sequoia](macos-15-sequoia.md).
+- **تحويل صورة الاستعادة**: سكربت `prepare-macos-recovery` نزّل صورة Tahoe من Apple وحوّلها إلى `.vmdk` بنجاح على VMware Workstation 17.6.2، بس الإقلاع منها ما انجرّب للحين. إذا ما قلع منها الـ VM، استخدم [Sequoia](macos-15-sequoia.md).
