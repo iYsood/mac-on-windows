@@ -7,8 +7,8 @@
 *.img
 macOS-VM/
 recovery-*/
-tools/macrecovery.py
-tools/boards.json
+**/tools/macrecovery.py
+**/tools/boards.json
 *.lck/
 
 # Third-party tools extracted inside the repo
